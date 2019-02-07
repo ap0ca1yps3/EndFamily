@@ -2,14 +2,15 @@ package society.community.endfamily.endfamily;
 
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
-import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
-import android.widget.TextView;
 
-public class MainActivity extends FragmentActivity {
-    private BottomNavigationView navigationView;
+public class MainActivity extends AppCompatActivity {
+
+    BottomNavigationView mainNavigationView;
+
+    // Used to load the 'native-lib' library on application startup.
     static {
         System.loadLibrary("native-lib");
     }
@@ -18,18 +19,18 @@ public class MainActivity extends FragmentActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        navigationView = findViewById(R.id.main_BottomNavigation);
-        navigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+        mainNavigationView = findViewById(R.id.mainBottomNavigation);
+        mainNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
-                    case R.id.navigation_resources:{
+                    case R.id.nav_menu_resources:{
                         return true;
                     }
-                    case R.id.navigation_gameTool:{
+                    case R.id.nav_menu_gametool:{
                         return true;
                     }
-                    case R.id.navigation_me:{
+                    case R.id.nav_menu_me:{
                         return true;
                     }
                 }
@@ -39,5 +40,3 @@ public class MainActivity extends FragmentActivity {
     }
 
 }
-
-

@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">EndFamily</string>
-    <string name="navigation_resources">資源</string>
-    <string name="navigation_gameTool">工具</string>
-    <string name="navigation_me">自己</string>
+    <string name="nav_resources">資源</string>
+    <string name="nav_gametool">工具</string>
+    <string name="nav_me">自己</string>
 </resources>
