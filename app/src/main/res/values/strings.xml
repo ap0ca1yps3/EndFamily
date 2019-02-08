@@ -3,4 +3,10 @@
     <string name="nav_resources">資源</string>
     <string name="nav_gametool">工具</string>
     <string name="nav_me">自己</string>
+    <string name="resources_view_title">標題</string>
+    <string name="resources_view_content">內容</string>
+    <string name="resources_view_more">更多</string>
+    <string name="resources_view_image_description">Image of the content</string>
+    <string name="resources_view_summary"> 描述</string>
+    <string name="nothing">沒了</string>
 </resources>
