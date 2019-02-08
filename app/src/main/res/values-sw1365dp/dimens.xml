@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<dimen name="layout_height">1516.6667dp</dimen>
+	<dimen name="padding">18.9583dp</dimen>
+	<dimen name="layout_margin">113.7500dp</dimen>
+	<dimen name="relativeLayout_margin">7.5833dp</dimen>
+	<dimen name="font_weight">400</dimen>
+</resources>
