@@ -1,14 +1,14 @@
 package endfamily.qiufeng.js.modpe;
 import endfamily.qiufeng.js.*;
-import java.io.*;
 import endfamily.qiufeng.js.modpe.obj.*;
 import endfamily.qiufeng.util.*;
+import java.io.*;
 import java.util.*;
 
 public class ModPE extends ModClass
 {
 	private HashMap<String,String> lang=new HashMap<>();
-	private ItemObj items[]={};
+	private HashMap<ItemIdentifier,ItemObj> items=new HashMap<>();
 	public ModPE(JsEngine je){
 		super(je);
 	}
