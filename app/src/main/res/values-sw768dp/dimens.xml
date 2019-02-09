@@ -4,5 +4,6 @@
 	<dimen name="padding">10.6667dp</dimen>
 	<dimen name="layout_margin">64.0000dp</dimen>
 	<dimen name="relativeLayout_margin">4.2667dp</dimen>
-	<dimen name="font_weight">400</dimen>
+	<dimen name="font_size">21.3333sp</dimen>
+	<dimen name="elevation">106.6667dp</dimen>
 </resources>
