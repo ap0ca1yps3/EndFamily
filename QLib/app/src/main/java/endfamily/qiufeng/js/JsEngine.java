@@ -39,4 +39,15 @@ public class JsEngine
 			}
 		}
 	}
+	public void run(InputStream in,String fileName){
+		try{
+			ctx.evaluateReader(scope, new InputStreamReader(in), fileName, 0, null);
+		}catch(IOException e){
+			Const.instance.print(e.getClass().getName()+":"+e.getMessage());
+			for(StackTraceElement ste : e.getStackTrace()){
+				Const.instance.print(ste.toString());
+			}
+			Const.instance.print(fileName+": NOP.");
+		}
+	}
 };
